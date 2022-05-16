@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GALAXY-C | Contact-Us</title>
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon.png"
+    />
+    <!-- Remix icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- Swiper.js styles -->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="./assets/css/contact.css" />
+  </head>
+  <body>
+    <h1>Get In Touch With Group-C</h1>
+    <div class="groupC" id="indexes formwrap">
+      <form
+        action="submit.html"
+        method=""
+        class="groupC-form"
+        novalidate="novalidate"
+      >
+        <!-- #region None -->
+        <div style="display: none">
+          <input type="hidden" name="_groupC" value="156" />
+          <input type="hidden" name="_groupC_version" value="3.7.2" />
+          <input type="hidden" name="_groupC_locale" value="en_US" />
+          <input type="hidden" name="_groupC_unit_tag" value="indexes" />
+          <input type="hidden" name="_wpnonce" value="d1da331d93" />
+        </div>
+        <!-- #endregion -->
+        <p>
+          <span class="groupC-form-control-wrap Name">
+            <input
+              type="text"
+              name="Name"
+              value=""
+              size="40"
+              class="nameinput groupC-form-control groupC-text groupC-validates-as-required"
+              aria-required="true"
+              aria-invalid="false"
+              placeholder="Name"
+            />
+          </span>
+          <span class="groupC-form-control-wrap Email">
+            <input
+              type="email"
+              name="Email"
+              size="40"
+              class="emailinput groupC-form-control groupC-text groupC-email groupC-validates-as-required groupC-validates-as-email"
+              aria-required="true"
+              aria-invalid="false"
+              placeholder="Email"
+            />
+          </span>
+          <span class="groupC-form-control-wrap Subject flat">
+            <select
+              name="Subject"
+              class="indent groupC-form-control groupC-select groupC-validates-as-required"
+              aria-required="true"
+              aria-invalid="false"
+            >
+              <option value="Join">Join Group-C</option>
+              <option value="Offer">Make an Offer</option>
+              <option value="Sugestion">Provide a Sugestion</option>
+            </select>
+          </span>
+          <span class="groupC-form-control-wrap Message">
+            <textarea
+              name="Message"
+              cols="40"
+              rows="10"
+              class="groupC-form-control groupC-textarea"
+              aria-invalid="false"
+              placeholder="Message"
+            ></textarea>
+          </span>
+          <input
+            type="submit"
+            value="Send"
+            class="groupC-form-control groupC-submit btn"
+          />
+          <img
+            class="ajax-loader"
+            src="http://www.jordancundiff.com/wp-content/plugins/contact-form-7/images/ajax-loader.gif"
+            alt="Sending ..."
+            style="visibility: hidden"
+          />
+        </p>
+        <div class="groupC-response-output groupC-display-none"></div>
+      </form>
+    </div>
+
+    <!-- Swiper.js -->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <!-- Custom script -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
