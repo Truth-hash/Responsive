@@ -10,11 +10,11 @@ body {
   padding-top: 0px;
 }
 
-h1 {
+h3 {
   color: #fff;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.4);
-  padding-top: 30px;
-  font-size: 100px;
+  padding-top: 15px;
+  font-size: 2rem;
   font-weight: 700;
   text-align: center;
   font-family: "Source Sans Pro", sans-serif;
@@ -213,7 +213,7 @@ textarea:focus {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1035px) {
-  h1 {
+  h3 {
     font-size: 80px;
   }
   form {
@@ -241,7 +241,7 @@ textarea:focus {
 }
 
 @media only screen and (max-width: 804px) {
-  h1 {
+  h3 {
     font-size: 50px;
   }
   form {
@@ -269,7 +269,7 @@ textarea:focus {
 }
 
 @media only screen and (max-width: 517px) {
-  h1 {
+  h3 {
     font-size: 30px;
   }
   form {
