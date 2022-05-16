@@ -1,0 +1,102 @@
+html{
+  height: 100%;
+  color: whitesmoke;
+}
+
+.bg-img {
+  height: 100%;
+  background-origin: content-box;
+  background-size: 200%;
+  background-image: linear-gradient(
+    115deg,
+    #4fcf70,
+    #fad648,
+    #a767e5,
+    #12bcfe,
+    #44ce7b
+  );
+  background-size: cover;
+  background-repeat: repeat;
+  animation: spin 2s infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes spin {
+  from {
+    background-position: 0% 0%;
+  }
+  to {
+    background-position: 200% 0%;
+  }
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1024px;
+}
+
+header {
+  height: 118px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav {
+  background-color: rgba(210, 194, 194, 0.338);
+  text-align: center;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+
+main {
+  height: 400px;
+  text-align: center;
+  padding-top: 80px;
+  padding-left: 240px;
+  padding-right: 240px;
+}
+main p {
+  color: white;
+}
+
+footer {
+  background-color: rgba(173, 150, 150, 0.728);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+h1 {
+  font-size: 84px;
+  color: whitesmoke;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-size: 18px;
+  color: inherit;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: inherit;
+  font-family: Arial, Helvetica, sans-serif;
+  /* text-decoration: none; */
+}
+
+nav a {
+  text-decoration: none;
+  font-size: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+footer p {
+  font-size: 30px;
+  text-align: center;
+  color: rgb(245, 229, 229);
+}
+
+.maps {
+  padding-bottom: 100px;
+}

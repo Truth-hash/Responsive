@@ -1,0 +1,692 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GALAXY-C</title>
+    <!-- Favicon -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon.png"
+    />
+    <!-- Remix icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- Swiper.js styles -->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header" id="header">
+      <nav class="navbar container">
+        <a href="./index.html">
+          <h2 class="logo">Assemblage</h2>
+        </a>
+
+        <div class="menu" id="menu">
+          <ul class="list">
+            <li class="list-item">
+              <a href="#" class="list-link current">Home</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Categories</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Reviews</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">News</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Membership</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Contact</a>
+            </li>
+            <li class="list-item screen-lg-hidden">
+              <a href="./signin.html" class="list-link">Sign in</a>
+            </li>
+            <li class="list-item screen-lg-hidden">
+              <a href="./signup.html" class="list-link">Sign up</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="list list-right">
+          <button class="btn place-items-center" id="theme-toggle-btn">
+            <i class="ri-sun-line sun-icon"></i>
+            <i class="ri-moon-line moon-icon"></i>
+          </button>
+
+          <button class="btn place-items-center" id="search-icon">
+            <i class="ri-search-line"></i>
+          </button>
+
+          <button
+            class="btn place-items-center screen-lg-hidden menu-toggle-icon"
+            id="menu-toggle-icon"
+          >
+            <i class="ri-menu-3-line open-menu-icon"></i>
+            <i class="ri-close-line close-menu-icon"></i>
+          </button>
+
+          <a href="#" class="list-link screen-sm-hidden">Sign in</a>
+          <a href="#" class="btn sign-up-btn fancy-border screen-sm-hidden">
+            <span>Sign up</span>
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Search -->
+    <div class="search-form-container container" id="search-form-container">
+      <div class="form-container-inner">
+        <form action="" class="form">
+          <input
+            class="form-input"
+            type="text"
+            placeholder="What are you looking for?"
+          />
+          <button class="btn form-btn" type="submit">
+            <i class="ri-search-line"></i>
+          </button>
+        </form>
+        <span class="form-note">Or press ESC to close.</span>
+      </div>
+
+      <button class="btn form-close-btn place-items-center" id="form-close-btn">
+        <i class="ri-close-line"></i>
+      </button>
+    </div>
+
+    <!-- Featured articles -->
+    <section class="featured-articles section section-header-offset">
+      <div class="featured-articles-container container d-grid">
+        <div class="featured-content d-grid">
+          <div class="headline-banner">
+            <h3 class="headline fancy-border">
+              <span class="place-items-center">Reporting Live</span>
+            </h3>
+            <span class="headline-description"
+              >Group-C announces a new discovery...</span
+            >
+          </div>
+
+          <a
+            href="/Responsive/2/index.html"
+            class="article featured-article featured-article-1"
+            target="_self"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1505685296765-3a2736de412f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8M3wxMzU2NTI5fHxlbnwwfHx8fA%3D%3D&w=1000&q=80"
+              alt=""
+              loading="lazy"
+              class="article-image"
+            />
+            <span class="article-category">Webpage A</span>
+
+            <div class="article-data-container">
+              <div class="article-data">
+                <span>16 May 2022</span>
+                <span class="article-data-spacer"></span>
+                <span>8 Min read</span>
+              </div>
+
+              <h3 class="title article-title">Our Responsive Webpage</h3>
+            </div>
+          </a>
+
+          <a
+            href="/Non-Responsive/index.html"
+            class="article featured-article featured-article-2"
+          >
+            <img
+              src="https://ceblog.s3.amazonaws.com/wp-content/uploads/2018/08/28183850/home_post_2.gif"
+              alt=""
+              loading="lazy"
+              class="article-image"
+            />
+            <span class="article-category">Webpage B</span>
+
+            <div class="article-data-container">
+              <div class="article-data">
+                <span>Dec 6th 2021</span>
+                <span class="article-data-spacer"></span>
+                <span>4 Min read</span>
+              </div>
+
+              <h3 class="title article-title">Is This Responsive?</h3>
+            </div>
+          </a>
+
+          <a
+            href="https://www.webfx.com/web-design/learn/why-responsive-design-important/"
+            class="article featured-article featured-article-3"
+            target="_blank"
+          >
+            <img
+              src="https://th.bing.com/th/id/R.e8069c8e9bb93da02c82da4dae3cf9dd?rik=qwFILWR2ZMatXQ&pid=ImgRaw&r=0"
+              alt=""
+              loading="lazy"
+              class="article-image"
+            />
+            <span class="article-category">Blog</span>
+
+            <div class="article-data-container">
+              <div class="article-data">
+                <span>16 May 2022</span>
+                <span class="article-data-spacer"></span>
+                <span>45 Min read</span>
+              </div>
+
+              <h3 class="title article-title">
+                Why is Responsive Design So Important?
+              </h3>
+            </div>
+          </a>
+        </div>
+
+        <div class="sidebar d-grid">
+          <h3 class="title featured-content-title">Top Trends</h3>
+
+          <a
+            href="https://cdnjs.cloudflare.com/"
+            target="_blank"
+            class="trending-news-box"
+          >
+            <div class="trending-news-img-box">
+              <span class="trending-number place-items-center">01</span>
+              <img
+                src="https://www.bing.com/th?id=A229483bee1d28c6ebbaa1d873bdc15b9&w=116&h=116&c=7&o=6&pid=SANGAM"
+                alt=""
+                loading="lazy"
+                class="article-image"
+              />
+            </div>
+
+            <div class="trending-news-data">
+              <div class="article-data">
+                <span>16 May 2022</span>
+                <span class="article-data-spacer"></span>
+                <span>13 Min read</span>
+              </div>
+
+              <h3 class="title article-title">Using Defined Script</h3>
+            </div>
+          </a>
+
+          <a
+            href="https://jquery.com"
+            target="_blank"
+            class="trending-news-box"
+          >
+            <div class="trending-news-img-box">
+              <span class="trending-number place-items-center">02</span>
+              <img
+                src="https://th.bing.com/th/id/OIP.nJVTQT2rFMlWKMcFWGF25QHaHa?w=170&h=180&c=7&r=0&o=5&pid=1.7"
+                alt=""
+                loading="lazy"
+                class="article-image"
+              />
+            </div>
+
+            <div class="trending-news-data">
+              <div class="article-data">
+                <span>16 May 2022</span>
+                <span class="article-data-spacer"></span>
+                <span>38 Min read</span>
+              </div>
+
+              <h3 class="title article-title">Using Jquery</h3>
+            </div>
+          </a>
+
+          <a
+            href="https://getbootstrap.com/"
+            target="_blank"
+            class="trending-news-box"
+          >
+            <div class="trending-news-img-box">
+              <span class="trending-number place-items-center">03</span>
+              <img
+                src="https://www.bing.com/th?id=A17c8e197bd32d9a19418b60d6813ea92&w=188&h=132&c=7&o=6&pid=SANGAM"
+                alt=""
+                loading="lazy"
+                class="article-image"
+              />
+            </div>
+
+            <div class="trending-news-data">
+              <div class="article-data">
+                <span>16 May 2022</span>
+                <span class="article-data-spacer"></span>
+                <span>30 Min read</span>
+              </div>
+
+              <h3 class="title article-title">Using Bootstrap</h3>
+            </div>
+          </a>
+
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Realizing_common_layouts_using_CSS_Grid_Layout"
+            target="_blank"
+            class="trending-news-box"
+          >
+            <div class="trending-news-img-box">
+              <span class="trending-number place-items-center">04</span>
+              <img
+                src="https://www.bing.com/th?id=Ac80e984edd64a504a8353671972138ae&w=148&h=148&c=7&o=6&pid=SANGAM"
+                alt=""
+                loading="lazy"
+                class="article-image"
+              />
+            </div>
+
+            <div class="trending-news-data">
+              <div class="article-data">
+                <span>16 May 2022</span>
+                <span class="article-data-spacer"></span>
+                <span>3 Min read</span>
+              </div>
+
+              <h3 class="title article-title">Using Grid Layout</h3>
+            </div>
+          </a>
+
+          <a
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox"
+            target="_blank"
+            class="trending-news-box"
+          >
+            <div class="trending-news-img-box">
+              <span class="trending-number place-items-center">05</span>
+              <img
+                src="https://www.bing.com/th?id=OIP.24cSU_HpB2Iu78MVpehNPQHaEK&w=192&h=108&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2 "
+                width="100%"
+                alt=""
+                loading="lazy"
+                class="article-image"
+              />
+            </div>
+
+            <div class="trending-news-data">
+              <div class="article-data">
+                <span>16 May 2022</span>
+                <span class="article-data-spacer"></span>
+                <span>17 Min read</span>
+              </div>
+
+              <h3 class="title article-title">Using a Flexbox</h3>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick read -->
+    <section class="quick-read section">
+      <div class="container">
+        <h2 class="title section-title" data-name="Check This">
+          Check This Out
+        </h2>
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <a href="/Non-Responsive/index.html" class="article swiper-slide">
+              <img
+                src="./assets/images/quick_read/quick_read_1.jpg"
+                alt=""
+                loading="lazy"
+                class="article-image"
+              />
+
+              <div class="article-data-container">
+                <div class="article-data">
+                  <span>16 May 2022</span>
+                  <span class="article-data-spacer"></span>
+                  <span>6 Min read</span>
+                </div>
+                <h3 class="title article-title">Non-Responsive Website</h3>
+              </div>
+            </a>
+            <!-- Slides -->
+            <a href="/Responsive/1/index.html" class="article swiper-slide">
+              <img
+                src="./assets/images/quick_read/quick_read_2.jpg"
+                alt=""
+                loading="lazy"
+                class="article-image"
+              />
+
+              <div class="article-data-container">
+                <div class="article-data">
+                  <span>16 May 2022</span>
+                  <span class="article-data-spacer"></span>
+                  <span>5 Min read</span>
+                </div>
+                <h3 class="title article-title">Responsive Website</h3>
+              </div>
+            </a>
+            <!-- Slides -->
+            <a
+              href="https://www.google.com/"
+              class="article swiper-slide"
+              target="_blank"
+            >
+              <img
+                src="https://th.bing.com/th/id/R.9b50c487b5d4f98a969d9c7e3b69c9d0?rik=tKpVr4Ntv4Ct1Q&riu=http%3a%2f%2fimg13.deviantart.net%2fe8ed%2fi%2f2016%2f016%2f1%2f2%2fgoogle__4k__by_thegoldenbox-d9o6rrr.jpg&ehk=TDboGdgmcoM1T8LMl%2fcty1L85n3pLo9xB4bEZzWR0oA%3d&risl=&pid=ImgRaw&r=0"
+                alt=""
+                loading="lazy"
+                class="article-image"
+              />
+
+              <div class="article-data-container">
+                <div class="article-data">
+                  <span>16 May 2022</span>
+                  <span class="article-data-spacer"></span>
+                  <span>3 Hrs read</span>
+                </div>
+                <h3 class="title article-title">Go to Google</h3>
+              </div>
+            </a>
+            <!-- Slides -->
+            <a
+              href="https://www.w3schools.com/"
+              class="article swiper-slide"
+              target="_blank"
+            >
+              <img
+                src="https://th.bing.com/th/id/OIP.3WTSpdeLYMWYBmwY2XfKxAAAAA?pid=ImgDet&w=280&h=280&rs=1"
+                alt=""
+                loading="lazy"
+                class="article-image"
+              />
+
+              <div class="article-data-container">
+                <div class="article-data">
+                  <span>16 May 2022</span>
+                  <span class="article-data-spacer"></span>
+                  <span>32 Min read</span>
+                </div>
+                <h3 class="title article-title">Visit W3schools</h3>
+              </div>
+            </a>
+            <!-- Slides -->
+            <a href="" target="_blank" class="article swiper-slide">
+              <img
+                src="https://th.bing.com/th/id/R.4384d9811927b44472b06245b8921b9f?rik=oY%2btuNbReNedDQ&pid=ImgRaw&r=0"
+                alt=""
+                loading="lazy"
+                class="article-image"
+              />
+
+              <div class="article-data-container">
+                <div class="article-data">
+                  <span>16 May 2022</span>
+                  <span class="article-data-spacer"></span>
+                  <span>3 Min read</span>
+                </div>
+                <h3 class="title article-title">Web Block</h3>
+              </div>
+            </a>
+            <!-- Slides -->
+            <a href="#" class="article swiper-slide">
+              <img
+                src="https://th.bing.com/th/id/R.7fa2b821c45841eaf8cd53350f2de131?rik=yFj2KihucLiIPQ&pid=ImgRaw&r=0"
+                alt=""
+                loading="lazy"
+                class="article-image"
+              />
+
+              <div class="article-data-container">
+                <div class="article-data">
+                  <span>16 May 2022</span>
+                  <span class="article-data-spacer"></span>
+                  <span>3 Min read</span>
+                </div>
+                <h3 class="title article-title">Learn About Web3</h3>
+              </div>
+            </a>
+          </div>
+          <!-- Navigation buttons -->
+          <div class="swiper-button-prev swiper-controls"></div>
+          <div class="swiper-button-next swiper-controls"></div>
+          <!-- Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Older posts -->
+
+    <!-- Popular tags -->
+    <section class="popular-tags section">
+      <div class="container">
+        <h2 class="title section-title" data-name="Random List">Random List</h2>
+
+        <div class="popular-tags-container d-grid">
+          <a href="#" class="article">
+            <span class="tag-name">#Travel</span>
+            <img
+              src="./assets/images/tags/travel-tag.jpg"
+              alt=""
+              loading="lazy"
+              class="article-image"
+            />
+          </a>
+
+          <a href="#" class="article">
+            <span class="tag-name">#Food</span>
+            <img
+              src="./assets/images/tags/food-tag.jpg"
+              alt=""
+              loading="lazy"
+              class="article-image"
+            />
+          </a>
+
+          <a href="#" class="article">
+            <span class="tag-name">#Technology</span>
+            <img
+              src="./assets/images/tags/technology-tag.jpg"
+              alt=""
+              loading="lazy"
+              class="article-image"
+            />
+          </a>
+
+          <a href="#" class="article">
+            <span class="tag-name">#Health</span>
+            <img
+              src="./assets/images/tags/health-tag.jpg"
+              alt=""
+              loading="lazy"
+              class="article-image"
+            />
+          </a>
+
+          <a href="#" class="article">
+            <span class="tag-name">#Nature</span>
+            <img
+              src="./assets/images/tags/nature-tag.jpg"
+              alt=""
+              class="article-image"
+            />
+          </a>
+
+          <a href="#" class="article">
+            <span class="tag-name">#Fitness</span>
+            <img
+              src="./assets/images/tags/fitness-tag.jpg"
+              alt=""
+              loading="lazy"
+              class="article-image"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter section">
+      <div class="container">
+        <h2 class="title section-title" data-name="Newsletter">Newsletter</h2>
+
+        <div class="form-container-inner">
+          <h6 class="title newsletter-title">JOIN G-C</h6>
+          <p class="newsletter-description">
+            Lorem ipsum dolor sit amet consectetur adipisicing quaerat
+            dignissimos.
+          </p>
+
+          <form action="" method="post" class="form">
+            <input
+              class="form-input"
+              type="text"
+              placeholder="Enter your email address"
+            />
+            <button class="btn form-btn" type="submit">
+              <i class="ri-mail-send-line"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer section">
+      <div class="footer-container container d-grid">
+        <div class="company-data">
+          <a href="./index.html">
+            <h2 class="logo">GROUP-C</h2>
+          </a>
+          <p class="company-description">
+            According to the GH Copyright Office, copyright applies to original
+            works of creative expression that are captured in a tangible form.
+          </p>
+
+          <ul class="list social-media">
+            <li class="list-item">
+              <a
+                href="https://www.instagram.com/zere.bel/"
+                target="_blank"
+                class="list-link"
+                ><i class="ri-instagram-line"></i
+              ></a>
+            </li>
+            <li class="list-item">
+              <a
+                href="https://www.facebook.com/truth.zere"
+                target="_blank"
+                class="list-link"
+                ><i class="ri-facebook-circle-line"></i
+              ></a>
+            </li>
+            <li class="list-item">
+              <a
+                href="https://chat.whatsapp.com/L4MnreFpEKY9nTXyGYGfxe"
+                target="_blank"
+                class="list-link"
+                ><i class="ri-whatsapp-line" id="whatsapp-link"></i
+              ></a>
+            </li>
+            <li class="list-item">
+              <a
+                href="https://twitter.com/Truth46474749"
+                target="_blank"
+                class="list-link"
+                ><i class="ri-twitter-line"></i
+              ></a>
+            </li>
+          </ul>
+
+          <span class="copyright-notice"
+            >&copy;2022 Group-C. All rights reserved.</span
+          >
+        </div>
+
+        <div>
+          <h6 class="title footer-title">Categories</h6>
+
+          <ul class="footer-list list">
+            <li class="list-item">
+              <a href="#" class="list-link">Travel</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Food</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Technology</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Health</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Nature</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Fitness</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h6 class="title footer-title">Useful links</h6>
+
+          <ul class="footer-list list">
+            <li class="list-item">
+              <a href="#" class="list-link">Home</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Elements</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Tags</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Authors</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Membership</a>
+            </li>
+          </ul>
+        </div>
+
+        <div>
+          <h6 class="title footer-title">Company</h6>
+
+          <ul class="footer-list list">
+            <li class="list-item">
+              <a href="#" class="list-link">Contact us</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">F.A.Q</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Careers</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Authors</a>
+            </li>
+            <li class="list-item">
+              <a href="#" class="list-link">Memberships</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Swiper.js -->
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <!-- Custom script -->
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
